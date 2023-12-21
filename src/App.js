@@ -14,7 +14,6 @@ function App() {
       <Firstp />
       <SkillsContainer />
       <Projects />
-
     </div>
   );
 }
