@@ -1,0 +1,42 @@
+
+.extracurricular-container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .activity {
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+  }
+  
+  .activity-text {
+    flex: 1;
+  }
+  
+  .activity h3 {
+    color: #3498db;
+    font-size: 26px;
+    margin-bottom: 0.5rem;
+  }
+  
+  .activity p {
+    color: #555;
+    font-size:23px ;
+  }
+  
+  .activity img {
+    width: 100px;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+  }
+  h2{
+    font-size: 3.5rem;
+    margin-left: 78px;
+  }
+  body{
+    background-color: #F0EFEB  ;
+  }
+ 

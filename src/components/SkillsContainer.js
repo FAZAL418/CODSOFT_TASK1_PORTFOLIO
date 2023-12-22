@@ -11,7 +11,7 @@ const SkillsContainer = () => {
         <h1>{'<Skills />'}</h1>
         <div className="skillItem">
           <p>HTML, CSS, JS, React</p>
-          {renderSkillBar(90)}
+          {renderSkillBar(75)}
         </div>
         <div className="skillItem">
           <p>React Native, Redux</p>

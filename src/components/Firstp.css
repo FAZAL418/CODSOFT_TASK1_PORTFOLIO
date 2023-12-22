@@ -5,7 +5,7 @@ body {
   align-items: center;
   justify-content: center;
   height: 60%;
-  background-color: #fff;
+  background-color:black;
   overflow-y: auto;
 }
 
@@ -16,16 +16,16 @@ body {
   margin: auto;
 }
 
-.leftPanel,
 .rightPanel {
   flex: 1;
-  background-color: #fff;
+  background-color:#DDDDDD  ;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  width: 50%;
   max-width: 768px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .image {
@@ -64,9 +64,18 @@ body {
   }
 }
 
-.rightPanel {
-  background-color: #fff;
-  color: #fff;
+
+ 
+
+.leftPanel{
+  background-color: whitesmoke;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  max-width: 768px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
@@ -140,5 +149,40 @@ p {
   h2,
   p {
       font-size: 20px;
+  }
+}
+/* Firstp.css */
+
+.dev {
+  font-size: 24px; /* Increased font size */
+  font-weight: bold;
+  color: #555;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden; /* Hide overflowing text */
+}
+
+.status {
+  color: #007BFF;
+  overflow: hidden; /* Hide overflowing text */
+  animation: typing 6s steps(30, end), blink-caret 0.5s step-end infinite; /* Typing and blinking caret animation */
+  display: inline-block;
+}
+
+@keyframes typing {
+  0%, 50%, 100% {
+    width: 0;
+  }
+  25%, 75% {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+  from,
+  to {
+    border-right: 3px solid transparent;
+  }
+  50% {
+    border-right: 3px solid #007BFF; /* Blinking caret color */
   }
 }

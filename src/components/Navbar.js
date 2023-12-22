@@ -1,4 +1,3 @@
-
 import React from 'react';
 import './Navbar.css';
 
@@ -18,11 +17,14 @@ const Navbar = () => {
       <div className="navbar-item" onClick={() => scrollToSection('home')}>
         Home
       </div>
-      <div className="navbar-item" onClick={() => scrollToSection('projects')}>
-        Projects
+      <div className="navbar-item" onClick={() => scrollToSection('sidePursuits')}>
+        Side Pursuits
       </div>
       <div className="navbar-item" onClick={() => scrollToSection('skills')}>
         Skills
+      </div>
+      <div className="navbar-item" onClick={() => scrollToSection('projects')}>
+        Projects
       </div>
     </nav>
   );

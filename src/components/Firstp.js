@@ -1,12 +1,24 @@
-
-import React from 'react';
-import Navbar from './Navbar'; 
-import './Firstp.css'; 
+import React, { useState, useEffect } from 'react';
+import Navbar from './Navbar';
+import './Firstp.css';
 import DSC_0017 from './DSC_0017.JPG';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
 
+const statusOptions = ['REACTJS & REACTNATIVE DEVELOPER', 'Tech enthusiast', 'Software developer', 'Video gamer', 'Cricketer'];
+
 function Firstp() {
+  const [statusIndex, setStatusIndex] = useState(0);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setStatusIndex((prevIndex) => (prevIndex + 1) % statusOptions.length);
+    }, 3000);
+
+    return () => clearInterval(intervalId); 
+
+  }, []);
+
   const handleContactClick = () => {
     window.location.href = 'mailto:your.faizzusulphy@gmail.com?subject=Contact%20Me';
   };
@@ -18,7 +30,7 @@ function Firstp() {
         <div className="leftPanel">
           <img src={DSC_0017} alt="Description of the image" className="image" />
           <h1 className="Naam">{' <FAZAL S />'}</h1>
-          <p className="dev">REACTJS & REACTNATIVE DEVELOPER</p>
+          <p className="dev">{statusOptions[statusIndex]}</p>
           <button className="ContactButton" onClick={handleContactClick}>
             Contact Me
           </button>
@@ -45,6 +57,8 @@ function Firstp() {
             expand my knowledge of React Native and aim to produce flawless mobile cross-platform experiences. I am
             dedicated to lifelong learning and teamwork in addressing problems, and I infuse every project with my love
             of creativity. Together, let's create effective solutions!
+            <br />
+            Currently Pursing BE 3rd Year from Dr. D. Y. Patil Pratishthan's Dr. D. Y. Patil Institute of Engineering, Management and Research,Akurdi,Pune
           </p>
         </div>
       </div>

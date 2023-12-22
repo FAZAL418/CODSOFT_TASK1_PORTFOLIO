@@ -1,78 +1,81 @@
+
 body {
-    background-color: #fff; 
-    margin: 0;
+  background-color:#E2E2DB 
+  ;
+  margin: 0;
+  font-family: 'Segoe Script', cursive;
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 3.5rem;
+  text-align: center;
+  text-decoration: underline;
+  color: #333;
+  margin: 2rem 0;
+}
+
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin-bottom: 5rem;
+}
+
+.skillsContainer h2 {
+  text-decoration: underline;
+  margin-bottom: 2rem;
+  color: #007BFF;
+}
+
+.skillItem {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  text-align: center;
+  width: 70vw;
+  background-color: #F4EDED;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
   }
-  
-  h1 {
-    font-size: 70px;
-    text-align: center;
-    font-family: 'Segoe Script', cursive;
-    text-decoration: underline;
-    color: #333; 
-  }
-  
-  .skillsContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    margin-bottom: 75px;
-  }
-  
-  .skillsContainer h2 {
-    text-decoration: underline;
-    margin-bottom: 20px;
-    color: #007BFF; 
-  }
-  
-  .skillItem {
-    margin-top: 20px;
-    padding: 10px;
-    text-align: center;
-    width: 70vw;
-    background-color: #F4EDED; 
-    border-radius: 12px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease-in-out;
-  
-    &:hover {
-      transform: scale(1.05);
-    }
-  }
-  
-  .skillItem p {
-    margin: 5px 0;
-    font-size: 18px;
-    color: #333;
-  }
-  
-  .skillBar {
-    width: 100%;
-    height: 30px;
-    background-color: #333; 
-    margin-top: 10px;
-    border-radius: 8px;
-    overflow: hidden;
-    transition: background-color 0.3s ease;
-  }
-  
-  .skillBar:hover {
-    background-color: #555; 
-  }
-  
-  .fillAnimation {
-    height: 100%;
-    border-radius: 8px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    background-color: #007BFF;
-  }
-  
-  .skillLevel {
-    margin-right: 5px;
-    font-size: 14px;
-    color: #fff; 
-  }
-  
+}
+
+.skillItem p {
+  margin: 0.5rem 0;
+  font-size: 1.125rem;
+  color: #333;
+}
+
+.skillBar {
+  width: 100%;
+  height: 30px;
+  background-color: #333;
+  margin-top: 1rem;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: background-color 0.3s ease;
+}
+
+.skillBar:hover {
+  background-color: #555;
+}
+
+.fillAnimation {
+  height: 100%;
+  border-radius: 8px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #007BFF;
+}
+
+.skillLevel {
+  margin-right: 0.5rem;
+  font-size: 0.875rem;
+  color: #fff;
+}
